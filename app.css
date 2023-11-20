@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --font-s: 12px;
+  --font-m: 13px;
+  --font-l: 14px;
+
+  --line-h-n: 130%;
+  --line-h-m: 140%;
+
+  --grey-300: #1c181d;
+  --grey-200: #322f33;
+  --grey-100: #616161;
+  --grey-50: #656266;
+
+  --font-dark: #303030;
+  --font-mid: #616161;
+  --font-light: #e3e3e3;
+
+  --stroke-200: #616161;
+  --stroke-100: #e1e1e1;
+  --stroke-50: #dbdbdb;
+
+  --bg-color: #f1f1f1;
+
+  --focused: #005bd3;
+  --pressed: #f0f0f0;
+  --hover: #f1f1f1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg-color);
+  font-size: var(--font-m);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background: var(--grey-300);
+  padding: 12px 16px;
+  height: 56px;
+}
+
+nav .logo .logo-mobile {
+  display: none;
+}
+
+nav .search {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+}
+
+nav .search input {
+  width: 100%;
+  padding: 8px 8px 8px 34px;
+  font-size: var(--font-m);
+  line-height: var(--line-h-m);
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid var(--stroke-200);
+  background: var(--grey-200);
+}
+
+.search input::placeholder {
+  font-size: var(--font-m);
+  font-weight: 500;
+  color: var(--grey-100);
+}
+
+.search .search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.search-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+nav .nav-items {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+}
+
+nav .notify-icon {
+  padding: 8px;
+  background: var(--grey-200);
+}
+
+nav .notify-icon,
+nav .profile-icon {
+  border-radius: 8px;
+  color: var(--font-light);
+  background: var(--grey-200);
+}
+
+.notify-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-s);
+}
+
+.profile-icon span {
+  padding: 8px;
+}
+
+.profile-icon span:nth-child(2) {
+  background: #36fba1;
+  border-radius: 8px;
+  /* height: 100%; */
+  display: grid;
+  place-items: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  nav .logo .logo-mobile {
+    display: block;
+  }
+
+  nav .logo .logo-desktop {
+    display: none;
+  }
+  nav .notify-icon,
+  nav .profile-icon {
+    background: transparent;
+  }
+  .profile-icon span:first-child {
+    display: none;
+  }
+}
+
+/* ========== main ================== */
+
+main {
+  margin-block: 2rem;
+  margin-inline: auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.trial-msg {
+  background: var(--grey-300);
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: var(--font-light);
+  font-size: var(--font-l);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trial-msg button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: (1px solid rgba(0, 0, 0, 0.1));
+  box-shadow: 0px -1px 0px 0px #b5b5b5 inset;
+}
+
+.trial-msg > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.trial-msg span .close-icon {
+  padding: 6px;
+}
+
+section.setup {
+  margin-block: 1rem;
+  background: #fff;
+  color: var(--font-dark);
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.setup-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.setup-guide > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.setup-guide .heading {
+  color: var(--font-dark);
+  font-weight: 600;
+  font-size: var(--font-l);
+  line-height: var(--line-h-m);
+}
+
+.setup-guide > div p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: var(--line-h-m);
+}
+
+.progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: var(--font-s);
+  font-weight: var(--font-m);
+}
+
+.progress .bar{
+  width: 72px;
+  height: 4px;
+  background: var(--font-light);
+  border-radius: 8px;
+  position: relative;
+}
+
+.progress .bar::after{
+  content:'';
+  position: absolute;
+}
+
+.icon .default, .icon .open{
+  padding: 4px;
+}
+
+.icon .default{
+  color: var(--font-dark);
+cursor: pointer;
+}
+
+.icon .open{
+  display: none;
+}
+
+.default svg{
+  width: 20px;
+  height: 20px;
+}
