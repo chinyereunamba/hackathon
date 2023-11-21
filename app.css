@@ -197,9 +197,11 @@ section.setup {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
 .setup-guide {
+  padding: 8px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -222,16 +224,16 @@ section.setup {
   line-height: var(--line-h-m);
 }
 
-.progress {
+.setup-guide div.progress {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
   gap: 8px;
   font-size: var(--font-s);
   font-weight: var(--font-m);
 }
 
-.progress .bar{
+.progress .bar {
   width: 72px;
   height: 4px;
   background: var(--font-light);
@@ -239,25 +241,45 @@ section.setup {
   position: relative;
 }
 
-.progress .bar::after{
-  content:'';
+.progress .bar::after {
+  content: "";
   position: absolute;
+  width: 15px;
+  height: 4px;
+  border-radius: 8px 0 0 8px;
+  background: #000;
 }
 
-.icon .default, .icon .open{
+.icon .default,
+.icon .open {
   padding: 4px;
-}
-
-.icon .default{
-  color: var(--font-dark);
-cursor: pointer;
-}
-
-.icon .open{
   display: none;
+  color: var(--font-dark);
+  cursor: pointer;
 }
 
-.default svg{
+.icon .active {
+  display: block;
+}
+
+.default svg {
   width: 20px;
   height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .trial-msg {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 0;
+    gap: 16px;
+    position: relative;
+  }
+
+  .trial-msg .close-icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
 }
