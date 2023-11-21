@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="./app.css" />
   </head>
+
   <body>
     <nav>
       <div class="logo">
@@ -40,8 +41,9 @@
               clip-rule="evenodd"
               d="M8.82264 10.3833C7.89957 11.0841 6.74835 11.5 5.5 11.5C2.46243 11.5 0 9.03757 0 6C0 2.96243 2.46243 0.5 5.5 0.5C8.53757 0.5 11 2.96243 11 6C11 7.24835 10.5841 8.39957 9.8833 9.32264L12.7803 12.2197C13.0732 12.5126 13.0732 12.9874 12.7803 13.2803C12.4874 13.5732 12.0126 13.5732 11.7197 13.2803L8.82264 10.3833ZM9.5 6C9.5 8.20914 7.70914 10 5.5 10C3.29086 10 1.5 8.20914 1.5 6C1.5 3.79086 3.29086 2 5.5 2C7.70914 2 9.5 3.79086 9.5 6Z"
               fill="#fff"
-            /></svg
-        ></span>
+            />
+          </svg>
+        </span>
       </div>
       <div class="nav-items">
         <span class="notify-icon">
@@ -61,9 +63,7 @@
           </svg>
         </span>
         <div class="profile-icon">
-          <span>
-            Davii Collections
-          </span>
+          <span> Davii Collections </span>
           <span>DC</span>
         </div>
       </div>
@@ -73,7 +73,7 @@
         <p>Extend your trial for $1/month for 3 months on select plans.</p>
         <span>
           <button>Select a plan</button>
-          <span class="close-icon">
+          <button type="button" class="close-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -86,7 +86,7 @@
                 fill="#E3E3E3"
               />
             </svg>
-          </span>
+          </button>
         </span>
       </div>
       <section class="setup">
@@ -99,23 +99,246 @@
             <span>1 / 5 completed</span>
             <span class="bar"></span>
           </div>
-          <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorum illo, neque pariatur, unde suscipit doloremque reprehenderit mollitia facere veniam modi sed vel at, ratione saepe harum tempora. Maiores, maxime!</p>
+          <div class="content active">
+            <ul>
+              <li class="active">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                </span>
+                <div class="list-content">
+                  <div class="title">
+                    Customize your online store
+
+                    <div class="text-content">
+                      <p>
+                        Choose a theme and add your logo, colors, and images to
+                        reflect your brand. Learn more
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-content">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                      alt="customize-your-online-store"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                </span>
+                <div class="list-content">
+                  <div class="title">
+                    Add your first product
+                    <div class="text-content">
+                      <p>
+                        Write a description, add photos, and set pricing for the
+                        products you plan to sell. Learn more
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-content">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/product.png"
+                      alt="first-product"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                </span>
+                <div class="list-content">
+                  <div class="title">
+                    Add a custom domain
+                    <div class="text-content">
+                      <p>
+                        Your current domain is 222219.myshopify.com but you can
+                        add a custom domain to help customers find your online
+                        store. Learn more
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-content">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/website.png"
+                      alt="domain"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                </span>
+                <div class="list-content">
+                  <div class="title">
+                    Name your store
+                    <div class="text-content">
+                      <p>
+                        Your temporary store name is currently Davii
+                        collections. The store name appears in your admin and
+                        your online store. Learn more
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-content">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/name-store.png"
+                      alt="name-your-store"
+                    />
+                  </div>
+                </div>
+              </li>
+              <li>
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                </span>
+                <div class="list-content">
+                  <div class="title">
+                    Set up a payment provider
+                    <div class="text-content">
+                      <p>
+                        Choose a payment provider to start accepting payments.
+                        You’ll need to create an account with the payment
+                        provider and set it up with your Shopify store. Learn
+                        more
+                      </p>
+                    </div>
+                  </div>
+                  <div class="image-content">
+                    <img
+                      src="https://crushingit.tech/hackathon-assets/payment.png"
+                      alt="payment-provider"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="icon">
+        <button class="icon">
           <span class="default active">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.71967 8.46967C6.01256 8.17678 6.48744 8.17678 6.78033 8.46967L10.25 11.9393L13.7197 8.46967C14.0126 8.17678 14.4874 8.17678 14.7803 8.46967C15.0732 8.76256 15.0732 9.23744 14.7803 9.53033L10.7803 13.5303C10.4874 13.8232 10.0126 13.8232 9.71967 13.5303L5.71967 9.53033C5.42678 9.23744 5.42678 8.76256 5.71967 8.46967Z" fill="#4A4A4A"/>
-            </svg>             
-          </span>
-          <span class="open">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5303 12.2803C14.2374 12.5732 13.7626 12.5732 13.4697 12.2803L10 8.81066L6.53033 12.2803C6.23744 12.5732 5.76256 12.5732 5.46967 12.2803C5.17678 11.9874 5.17678 11.5126 5.46967 11.2197L9.46967 7.21967C9.76256 6.92678 10.2374 6.92678 10.5303 7.21967L14.5303 11.2197C14.8232 11.5126 14.8232 11.9874 14.5303 12.2803Z" fill="#4A4A4A"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.71967 8.46967C6.01256 8.17678 6.48744 8.17678 6.78033 8.46967L10.25 11.9393L13.7197 8.46967C14.0126 8.17678 14.4874 8.17678 14.7803 8.46967C15.0732 8.76256 15.0732 9.23744 14.7803 9.53033L10.7803 13.5303C10.4874 13.8232 10.0126 13.8232 9.71967 13.5303L5.71967 9.53033C5.42678 9.23744 5.42678 8.76256 5.71967 8.46967Z"
+                fill="#4A4A4A"
+              />
             </svg>
           </span>
-        </span>
-        </div>
+          <span class="open">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.5303 12.2803C14.2374 12.5732 13.7626 12.5732 13.4697 12.2803L10 8.81066L6.53033 12.2803C6.23744 12.5732 5.76256 12.5732 5.46967 12.2803C5.17678 11.9874 5.17678 11.5126 5.46967 11.2197L9.46967 7.21967C9.76256 6.92678 10.2374 6.92678 10.5303 7.21967L14.5303 11.2197C14.8232 11.5126 14.8232 11.9874 14.5303 12.2803Z"
+                fill="#4A4A4A"
+              />
+            </svg>
+          </span>
+        </button>
       </section>
     </main>
 

@@ -170,6 +170,10 @@ main {
   align-items: center;
 }
 
+.trial-msg.close {
+  display: none;
+}
+
 .trial-msg button {
   padding: 6px 12px;
   border-radius: 8px;
@@ -182,6 +186,12 @@ main {
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+button.close-icon {
+  border: none;
+  background: none;
+  box-shadow: none;
 }
 
 .trial-msg span .close-icon {
@@ -239,6 +249,7 @@ section.setup {
   background: var(--font-light);
   border-radius: 8px;
   position: relative;
+  user-select: none;
 }
 
 .progress .bar::after {
@@ -248,6 +259,11 @@ section.setup {
   height: 4px;
   border-radius: 8px 0 0 8px;
   background: #000;
+}
+
+.icon {
+  border: none;
+  background: none;
 }
 
 .icon .default,
@@ -282,4 +298,53 @@ section.setup {
     right: 0;
     top: 10px;
   }
+}
+
+.setup-guide .content {
+  display: none;
+}
+
+.setup-guide .content.active {
+  display: flex;
+}
+
+.content li {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 8px;
+  gap: 8px;
+}
+
+.content li > * {
+  align-self: stretch;
+}
+
+.content .title {
+  font-weight: 500;
+  font-size: var(--font-m);
+  line-height: var(--line-h-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  /* height: 24px; */
+  cursor: pointer;
+}
+
+.content .list-content {
+  display: flex;
+  align-items: flex-start;
+  /* align-content: stretch; */
+  justify-content: space-between;
+}
+
+.content .text-content,
+.content .image-content {
+  display: none;
+}
+
+.content li.active .text-content,
+.content li.active .image-content {
+  display: flex;
 }
